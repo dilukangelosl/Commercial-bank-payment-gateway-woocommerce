@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://migs.mastercard.com.au/vpcpay" method="POST">
+        <input type="hidden" name="Title" value = "PHP VPC 3 Party Transacion"><br>
+        <input name="vpc_Version" value="1" size="20" maxlength="8" placeholder="vpc_Version"/><br>
+        <input name="vpc_Command" value="pay" size="20" maxlength="16" placeholder="vpc_Command"/><br>
+        
+        <input name="vpc_AccessCode" value="21C482B1" size="20" maxlength="8" placeholder="vpc_AccessCode"/><br>
+        <input name="vpc_MerchTxnRef" value="test" size="20" maxlength="40" placeholder="vpc_MerchTxnRef"/><br>
+        <input name="vpc_Merchant" value="TESTPURPLESUNUSD" size="20" maxlength="16" placeholder="vpc_Merchant"/><br>
+        <input name="vpc_OrderInfo" value="test" size="20" maxlength="34" placeholder="vpc_OrderInfo"/><br>
+        <input name="vpc_Amount" value="1" maxlength="10" placeholder="vpc_Amount"/><br>
+        <input name="vpc_ReturnURL" size="65" value="http://axongre.com" maxlength="250" placeholder="vpc_ReturnURL"/><br>
+        <input name="vpc_Locale" value="en_AU" maxlength="10" placeholder="vpc_Locale"/><br>
+        <input name="vpc_Currency" value="USD" maxlength="10" placeholder="vpc_Currency"/><br>
+        <input name="vpc_SecureHash"  placeholder="vpc_SecureHash" value="EB231ECFCEFE6F29BCD5E31EE458080F"/><br>
+        <input name="vpc_SecureHashType" value="SHA256" maxlength="10" placeholder="vpc_SecureHashType"/><br>
+        <input type="submit" NAME="SubButL" value="Pay Now!" placeholder=""/>
+
+    </form>
+</body>
+</html>
